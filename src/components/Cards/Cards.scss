@@ -1,0 +1,29 @@
+@import './../../../base.scss';
+
+.container {
+  margin: 50px 0;
+}
+
+.cards {
+  margin-top: 5rem;
+}
+
+.card {
+  margin: 0 3% !important;
+
+  @include respond(tab) {
+    margin: 2% 0 !important;
+  }
+
+  &__infected {
+    border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+  }
+
+  &__recover {
+    border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+  }
+
+  &__death {
+    border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+  }
+}

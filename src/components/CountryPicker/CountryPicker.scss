@@ -1,0 +1,12 @@
+@import './../../../base.scss';
+.countryPicker {
+  &__form {
+    width: 30%;
+    margin-bottom: 30px !important;
+
+    @include respond(tab) {
+      width: 70%;
+      margin-top: 2rem !important;
+    }
+  }
+}
